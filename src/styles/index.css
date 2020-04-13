@@ -1342,21 +1342,21 @@ ul {
     /* Safari and Chrome */
 }
 
-body.responsive-block-on .responsive-block {
+header.responsive-block-on .responsive-block {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     transform: translateX(0px);
 }
 
-body.responsive-block-on .site,
-body.responsive-block-on #header,
-body.responsive-block-on #scamp_player {
+header.responsive-block-on .site,
+header.responsive-block-on #header,
+header.responsive-block-on #scamp_player {
     -webkit-transform: translateX(300px);
     -moz-transform: translateX(300px);
     transform: translateX(300px);
 }
 
-body.responsive-block-on .theiaStickySidebar {}
+header.responsive-block-on .theiaStickySidebar {}
 
 .responsive-block .responsive-nav-image {
     position: absolute;
@@ -1408,7 +1408,7 @@ body.responsive-block-on .theiaStickySidebar {}
     transition: all 0.6s cubic-bezier(.77, 0, .175, 1);
 }
 
-body.responsive-block-on .responsive-block-layer {
+header.responsive-block-on .responsive-block-layer {
     opacity: 1;
     visibility: visible
 }
@@ -1569,11 +1569,11 @@ body.responsive-block-on .responsive-block-layer {
 
 /* Ajax Page Container (APC)
  ------------------------------ */
-body.apc-open {
+header.apc-open {
     overflow: hidden;
 }
 
-body.apc-open .apc {
+header.apc-open .apc {
     display: block
 }
 
@@ -6886,9 +6886,9 @@ a:hover .text-fx-word p span,
         transform: translateX(-280px);
     }
 
-    body.responsive-block-on .site,
-    body.responsive-block-on #header,
-    body.responsive-block-on #scamp_player {
+    header.responsive-block-on .site,
+    header.responsive-block-on #header,
+    header.responsive-block-on #scamp_player {
         -webkit-transform: translateX(280px);
         -moz-transform: translateX(280px);
         transform: translateX(280px);
