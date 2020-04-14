@@ -1,16 +1,12 @@
 import React from "react"
+import { Parallax } from "react-scroll-parallax"
 
 const Shop = () => (
   <div id="music" className="section">
     <div className="container music-header section-content full-width">
       <header className="content-header">
         <h2 className="content-title">Music</h2>
-        <span
-          className="back-layer barlow"
-          data-parallax='{"y": 20}'
-        >
-          Releases
-        </span>
+        <span className="back-layer barlow">Releases</span>
       </header>
     </div>
 

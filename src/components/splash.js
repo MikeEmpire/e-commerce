@@ -3,7 +3,7 @@ import React from "react"
 import { Parallax } from "react-scroll-parallax"
 
 const Splash = () => (
-  <Parallax y={[-20, 20]}>
+  <Parallax y={[0, 0]}>
     <div id="intro" className="intro intro-01 intro-fullscreen clearfix">
     <div className="intro-image trans-20">
       {/* <img className="hidden" src={IntroImage} /> */}
