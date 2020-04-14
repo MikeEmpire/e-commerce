@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Splash from "../components/splash"
+import Shop from '../components/shop'
 import { ParallaxProvider } from "react-scroll-parallax"
 
 const IndexPage = () => (
@@ -10,7 +11,7 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <Splash />
-      {/* <Shop /> */}
+      <Shop />
       {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
