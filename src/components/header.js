@@ -6,7 +6,7 @@ import Logo from "./Images/logo"
 const Header = () => {
   const [isOpen, toggleMenu] = useState(false)
   return (
-    <header className={isOpen ? "home responsive-block-on" : "home"}>
+    <header id="header" className={isOpen ? "home responsive-block-on" : "home"}>
       <div className="responsive-block">
         <div className="responsive-block-content">
           <a
@@ -239,7 +239,7 @@ const Header = () => {
       <div id="main-nav">
         <div className="nav-container">
           <a href="#intro" id="logo" className="smooth-scroll skew-fx">
-            <Logo className="logo-light" />
+            {/* <Logo className="logo-light" /> */}
           </a>
 
           <nav id="icon-nav">
