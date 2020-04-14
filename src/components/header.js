@@ -1,8 +1,9 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import Logo from "./Images/logo"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [isOpen, toggleMenu] = useState(false)
   return (
     <header className={isOpen ? "home responsive-block-on" : "home"}>
@@ -13,20 +14,232 @@ const Header = ({ siteTitle }) => {
             className="responsive-block-close"
             onClick={() => toggleMenu(false)}
           ></a>
-          <nav id="responsive-nav"></nav>
-          <div id="responsive-social"></div>
+          <nav id="responsive-nav">
+            <ul>
+              <li className="text-fx-btn rotate-x-360 top-nav-el first-child">
+                <a href="#music" className="trans-10 text-fx-btn-x finished">
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0s" }}
+                    >
+                      M
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.022222222222222223s" }}
+                    >
+                      u
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.044444444444444446s" }}
+                    >
+                      s
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.06666666666666667s" }}
+                    >
+                      i
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.08888888888888889s" }}
+                    >
+                      c
+                    </span>
+                  </p>
+                </a>
+              </li>
+              <li className="text-fx-btn rotate-x-360 top-nav-el first-child">
+                <a href="#bio" className="trans-10 text-fx-btn-x finished">
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0s" }}
+                    >
+                      B
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.022222222222222223s" }}
+                    >
+                      i
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.044444444444444446s" }}
+                    >
+                      o
+                    </span>
+                  </p>
+                </a>
+              </li>
+              <li className="text-fx-btn rotate-x-360 top-nav-el first-child">
+                <a href="#contact" className="trans-10 text-fx-btn-x finished">
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0s" }}
+                    >
+                      C
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.022222222222222223s" }}
+                    >
+                      o
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.044444444444444446s" }}
+                    >
+                      n
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.06666666666666667s" }}
+                    >
+                      t
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.08888888888888889s" }}
+                    >
+                      a
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.1111111111111111s;" }}
+                    >
+                      c
+                    </span>
+                  </p>
+                  <p>
+                    <span
+                      className="trans-12"
+                      style={{ transitionDelay: "0.13333333333333333s;" }}
+                    >
+                      t
+                    </span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div id="responsive-social">
+            <div id="responsive-social">
+              <div className="social-icons trans-10 show-fx delay-01 on">
+                <a href="#" className="circle-btn">
+                  <svg
+                    className="circle-svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <circle
+                      className="circle"
+                      cx="25"
+                      cy="25"
+                      r="23"
+                      stroke="#fff"
+                      stroke-width="1"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <span className="icon icon-facebook"></span>
+                </a>
+
+                <a href="#" className="circle-btn">
+                  <svg
+                    className="circle-svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <circle
+                      className="circle"
+                      cx="25"
+                      cy="25"
+                      r="23"
+                      stroke="#fff"
+                      stroke-width="1"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <span className="icon icon-twitter"></span>
+                </a>
+                <a href="#" className="circle-btn">
+                  <svg
+                    className="circle-svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <circle
+                      className="circle"
+                      cx="25"
+                      cy="25"
+                      r="23"
+                      stroke="#fff"
+                      stroke-width="1"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <span className="icon icon-Beatport"></span>
+                </a>
+                <a href="#" className="circle-btn">
+                  <svg
+                    className="circle-svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 50 50"
+                  >
+                    <circle
+                      className="circle"
+                      cx="25"
+                      cy="25"
+                      r="23"
+                      stroke="#fff"
+                      stroke-width="1"
+                      fill="none"
+                    ></circle>
+                  </svg>
+                  <span className="icon icon-bandcamp"></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="responsive-block-layer"></div>
       <div id="main-nav">
         <div className="nav-container">
           <a href="#intro" id="logo" className="smooth-scroll skew-fx">
-            <img
-              src="images/logo-light.svg"
-              alt="Logo"
-              className="logo-light"
-            />
-            <img src="images/logo.svg" alt="Logo" className="logo-dark" />
+            <Logo className="logo-light" />
           </a>
 
           <nav id="icon-nav">
@@ -131,57 +344,8 @@ const Header = ({ siteTitle }) => {
           <nav id="nav">
             <ul>
               <li className="text-fx-btn rotate-x-360">
-                <a href="#" className="trans-10 text-fx-btn-x">
-                  Features
-                </a>
-                <ul>
-                  <li>
-                    <a href="grid.html" className="ajax-link">
-                      Grid
-                    </a>
-                  </li>
-                  <li>
-                    <a href="media.html" className="ajax-link">
-                      Media
-                    </a>
-                  </li>
-                  <li>
-                    <a href="elements.html" className="ajax-link">
-                      Elements
-                    </a>
-                  </li>
-                  <li>
-                    <a href="404.html" className="ajax-link">
-                      404 Error
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#newsletter">Newsletter</a>
-                  </li>
-                  <li>
-                    <a href="#">Sub Menu</a>
-                    <ul>
-                      <li>
-                        <a href="#">Level 2.1</a>
-                      </li>
-                      <li>
-                        <a href="#">Level 2.2</a>
-                      </li>
-                      <li>
-                        <a href="#">Level 2.3</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li className="text-fx-btn rotate-x-360">
                 <a href="#music" className="trans-10 text-fx-btn-x">
                   Music
-                </a>
-              </li>
-              <li className="text-fx-btn rotate-x-360">
-                <a href="#events" className="trans-10 text-fx-btn-x">
-                  Events
                 </a>
               </li>
               <li className="text-fx-btn rotate-x-360">
